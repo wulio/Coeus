@@ -20,7 +20,7 @@ Try your first Coeus scan:
 
   如对您有帮助，建议star或者watching,后续将持续更新,包括更新更多规则，动态扫描等相关内容。
  
-# Useage:
+# Usage:
   python coeus.py xxx.aar
 
 # Authors
@@ -33,3 +33,6 @@ AdvBox support [Apache License 2.0](https://github.com/baidu/AdvBox/blob/master/
 
 # Email
   deffingh@gmail.com
+
+# issues
+  welcome star or issues!
