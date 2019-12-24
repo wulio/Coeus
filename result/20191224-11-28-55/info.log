@@ -1,0 +1,17 @@
+2019-12-24 11:28:55 manager.py[line:32] INFO start sdk scan..
+2019-12-24 11:28:55 manager.py[line:46] INFO start unzip..
+2019-12-24 11:28:55 manager.py[line:61] INFO unzip success.
+2019-12-24 11:28:55 manager.py[line:66] INFO start decompile java.
+2019-12-24 11:28:55 manager.py[line:101] INFO totalfiles:310
+2019-12-24 11:29:00 manager.py[line:69] INFO decompile java success.
+2019-12-24 11:29:00 manager.py[line:73] INFO start decompile smali.
+2019-12-24 11:29:03 manager.py[line:75] INFO decompile smali success.
+2019-12-24 11:29:03 manager.py[line:84] INFO start scan..
+2019-12-24 11:29:03 base.py[line:14] INFO InfoScanner start.
+2019-12-24 11:29:03 base.py[line:29] INFO InfoScanner end.
+2019-12-24 11:29:03 base.py[line:14] INFO PolicyScanner start.
+2019-12-24 11:29:03 policy.py[line:81] INFO permission in policy_permission_json not find:getui.permission.GetuiService.${applicationId}
+2019-12-24 11:29:03 base.py[line:29] INFO PolicyScanner end.
+2019-12-24 11:29:03 base.py[line:14] INFO ApiScanner start.
+2019-12-24 11:29:04 base.py[line:29] INFO ApiScanner end.
+2019-12-24 11:29:04 manager.py[line:96] INFO scan success.

@@ -16,7 +16,8 @@ Try your first Coeus scan:
 # CH
 
   直接使用 python coeus.py xxx.aar调用，会生成reprot.xml在report目录，主要扫描安全漏洞、国内政策、隐私权限等信息。该项目其实可以复用为apk扫描，并无不同……
-  
+  可以查看result.xml，为个推最新sdk扫描结果
+
   如对您有帮助，建议star或者watching,后续将持续更新,包括更新更多规则，动态扫描等相关内容。
  
 # Useage:

@@ -1,0 +1,104 @@
+[
+  {
+    "name": "获取imei",
+    "summary": "sdk获取imei信息，需谨慎处理，否则APP可能被要求整改",
+    "desc": "1.工信部要求2.android10及以上获取不到了3.imei权限部分需要注意兼容",
+    "javacode": "",
+    "smalicode": {
+      "0": "Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String",
+      "1": "Landroid/telephony/TelephonyManager;->getImei(I)Ljava/lang/String",
+      "2": "Landroid/telephony/TelephonyManager;->getDeviceId(I)Ljava/lang/String"
+    },
+    "level": "2",
+    "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。工信部要求，不得向第三方提供用户设备IMEI号、地理位置等个人信息，及sdk不得私自传输。若必须，请经用户同意，且做匿名化处理，并附有隐私政策说明。且若用户拒绝，不能影响app正常业务使用。"
+  },
+  {
+    "name": "获取imsi",
+    "summary": "sdk获取imsi信息，需谨慎处理，否则APP可能被要求整改",
+    "desc": "工信部要求，不得向第三方提供用户设备IMEI号、地理位置、imsi等个人信息，及sdk不得私自传输。若必须，请经用户同意，且做匿名化处理，并附有隐私政策说明。",
+    "javacode": "",
+    "smalicode": {
+      "0": "Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String",
+      "1": "Landroid/telephony/TelephonyManager;->getSubscriberId(I)Ljava/lang/String"
+    },
+    "level": "1",
+    "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。工信部要求，不得向第三方提供用户设备IMEI号、地理位置等个人信息，及sdk不得私自传输。若必须，请经用户同意，且做匿名化处理，并附有隐私政策说明。且若用户拒绝，不能影响app正常业务使用。"
+  },
+  {
+    "name": "获取mac",
+    "summary": "sdk获取mac信息，需谨慎处理，否则APP可能被要求整改",
+    "desc": "1.工信部要求，mac也属于个人信息，2.android9及以上系统会随机生成不同的 MAC",
+    "javacode": "",
+    "smalicode": {
+      "0": "Landroid/net/wifi/WifiInfo;->getMacAddress()Ljava/lang/String;"
+    },
+    "level": "1",
+    "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。工信部要求，不得向第三方提供用户设备IMEI号、地理位置等个人信息，及sdk不得私自传输。若必须，请经用户同意，且做匿名化处理，并附有隐私政策说明。且若用户拒绝，不能影响app正常业务使用。"
+  },
+  {
+    "name": "获取android id",
+    "summary": "sdk获取android id信息，需谨慎处理，否则APP可能被要求整改",
+    "desc": "1.工信部要求，android id也属于个人信息，2.厂商定制系统的Bug：不同的设备可能会产生相同的ANDROID_ID 3.厂商定制系统的Bug：有些设备返回的值为null。 设备差异：对于CDMA设备，ANDROID_ID和TelephonyManager.getDeviceId() 返回相同的值。",
+    "javacode": "",
+    "smalicode": {
+      "0": "Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String"
+    },
+    "level": "1",
+    "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。工信部要求，不得向第三方提供用户设备IMEI号、地理位置等个人信息，及sdk不得私自传输。若必须，请经用户同意，且做匿名化处理，并附有隐私政策说明。且若用户拒绝，不能影响app正常业务使用。"
+  },
+  {
+    "name": "获取短信信息",
+    "summary": "sdk尝试获取短信",
+    "desc": "获取短信属于高危安全部分，建议重点知悉",
+    "javacode": "",
+    "smalicode": {
+      "0": "content://sms/"
+    },
+    "level": "2",
+    "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。在申请可收集个人信息的权限时，同步告知用户其目的"
+  },
+  {
+    "name": "获取联系人信息",
+    "summary": "sdk尝试获取联系人",
+    "desc": "获取联系人信息属于高危安全部分，建议重点知悉",
+    "javacode": "",
+    "smalicode": {
+      "0": "content://com.android.contacts/raw_contacts"
+    },
+    "level": "2",
+    "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。在申请可收集个人信息的权限时，同步告知用户其目的"
+  },
+  {
+    "name": "获取通讯信息",
+    "summary": "sdk尝试获取通讯信息",
+    "desc": "通讯信息属于高危安全部分，建议重点知悉",
+    "javacode": "",
+    "smalicode": {
+      "0": "CallLog.Calls.CONTENT_URI|content://call_log/calls"
+    },
+    "level": "",
+    "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。"
+  },
+  {
+    "name": "获取已安装程序列表",
+    "summary": "sdk尝试获取已安装程序列表 1.该信息属于个人隐私信息 2.工信部要求",
+    "desc": "sdk获取app列表，极有可能导致被整改",
+    "javacode": "",
+    "smalicode": {
+      "0": "Landroid/content/pm/PackageManager;->getInstalledPackages(I)Ljava/util/List;"
+    },
+    "level": "2",
+    "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。工信部要求，不得向第三方提供用户设备IMEI号、地理位置等个人信息，及sdk不得私自传输。若必须，请经用户同意，且做匿名化处理，并附有隐私政策说明。且若用户拒绝，不能影响app正常业务使用。"
+  },
+  {
+    "name": "安装程序",
+    "summary": "sdk可安装程序",
+    "desc": "sdk安装程序，需及时进行处理，正常不应有此功能",
+    "javacode": "",
+    "smalicode": {
+      "0": "application/vnd.android.package-archive"
+    },
+    "level": "",
+    "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。工信部要求，不得向第三方提供用户设备IMEI号、地理位置等个人信息，及sdk不得私自传输。若必须，请经用户同意，且做匿名化处理，并附有隐私政策说明。且若用户拒绝，不能影响app正常业务使用。"
+  }
+]

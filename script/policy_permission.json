@@ -1,0 +1,836 @@
+{
+  "1": {
+    "name": "android.permission.READ_PHONE_STATE",
+    "summary": "读取手机状态和身份",
+    "desc": "工信部要求不可获取，其次是andoridQ版本将限制应用访问不可重设的设备识别码，如 IMEI、序列号等，所有获取设备识别码的接口都增加了新的权限：READ_PRIVILEGED_PHONE_STATE，该权限需要系统签名的应用才能申请，意味着三方应用无法获取设备识别码。",
+    "level": "2"
+  },
+  "2": {
+    "name": "android.permission.BRICK",
+    "summary": "永久停用手机",
+    "desc": "允许应用程序永久停用整个手机，属于工信部要求范围。",
+    "level": "2"
+  },
+  "3": {
+    "name": "android.permission.BROADCAST_SMS",
+    "summary": "发送短信收到的广播",
+    "desc": "允许应用程序广播已收到短信的通知。请确认该sdk能使用该功能，否则违反工信部要求。",
+    "level": "2"
+  },
+  "4": {
+    "name": "android.permission.CALL_PHONE",
+    "summary": "直接拨打电话号码",
+    "desc": "允许应用程序在您不介入的情况下拨打电话，注意该项可能违反工信部要求。",
+    "level": "2"
+  },
+  "5": {
+    "name": "android.permission.CALL_PRIVILEGED",
+    "summary": "直接呼叫任何电话号码",
+    "desc": "允许应用程序在您不介入的情况下拨打任何电话（包括紧急呼救），注意该项可能违反工信部要求。",
+    "level": "2"
+  },
+  "6": {
+    "name": "android.permission.DELETE_CACHE_FILES",
+    "summary": "删除其他应用程序的缓存",
+    "desc": "允许应用程序删除缓存文件。注意该项可能违反工信部要求。",
+    "level": "2"
+  },
+  "7": {
+    "name": "android.permission.DEVICE_POWER",
+    "summary": "开机或关机",
+    "desc": "允许应用程序打开或关闭手机。注意该项可能违反工信部要求。",
+    "level": "2"
+  },
+  "8": {
+    "name": "android.permission.DIAGNOSTIC",
+    "summary": "读取/写入诊断所拥有的资源",
+    "desc": "允许应用程序读取/写入诊断组所拥有的任何资源（例如，/dev 中的文件）。这可能会影响系统稳定性和安全性。此权限仅供制造商或运营商诊断硬件问题。",
+    "level": "2"
+  },
+  "9": {
+    "name": "android.permission.INJECT_EVENTS",
+    "summary": "按键和控制按钮",
+    "desc": "允许应用程序将其自己的输入活动（按键等）提供给其他应用程序。恶意应用程序可借此掌控手机。注意该项可能违反工信部要求",
+    "level": "2"
+  },
+  "10": {
+    "name": "android.permission.MASTER_CLEAR",
+    "summary": "恢复出厂设置",
+    "desc": "允许应用程序将系统恢复为出厂设置，即清除所有数据、配置以及所安装的应用程序。",
+    "level": "2"
+  },
+  "11": {
+    "name": "android.permission.MOUNT_FORMAT_FILESYSTEMS",
+    "summary": "格式化外部存储设备",
+    "desc": "允许应用程序格式化可移除的存储设备。注意该项可能违反工信部要求",
+    "level": "2"
+  },
+  "12": {
+    "name": "android.permission.PROCESS_OUTGOING_CALLS",
+    "summary": "拦截外拨电话",
+    "desc": "允许应用程序处理外拨电话或更改要拨打的号码。注意该项可能违反工信部要求。",
+    "level": "2"
+  },
+  "13": {
+    "name": "android.permission.READ_CALL_LOG",
+    "summary": "读取通话记录",
+    "desc": "允许应用程序读取通话记录。此为高危风险,注意该项可能违反工信部要求",
+    "level": "2"
+  },
+  "14": {
+    "name": "android.permission.READ_CONTACTS",
+    "summary": "读取联系人数据",
+    "desc": "允许应用程序读取您手机上存储的所有联系人（地址）数据。注意该项可能违反工信部要求",
+    "level": "2"
+  },
+  "15": {
+    "name": "android.permission.READ_EXTERNAL_STORAGE",
+    "summary": "读取外存",
+    "desc": "允许应用程序读SD卡，目前应工信部要求，需用户授权，且不授权不能导致app失败,注意是否做好缺省。",
+    "level": "2"
+  },
+  "16": {
+    "name": "android.permission.READ_INPUT_STATE",
+    "summary": "记录您键入的内容和执行的操作",
+    "desc": "允许应用程序查看您按的键，即使在与其他应用程序交互（例如输入密码）时也不例外。普通应用程序从不需要使用此权限。",
+    "level": "2"
+  },
+  "17": {
+    "name": "android.permission.READ_SMS",
+    "summary": "读取短信或彩信",
+    "desc": "允许应用程序读取您的手机或 SIM 卡中存储的短信。注意该项可能违反工信部要求",
+    "level": "2"
+  },
+  "18": {
+    "name": "android.permission.READ_USER_DICTIONARY",
+    "summary": "读取用户定义的词典",
+    "desc": "允许应用程序读取用户在用户词典中存储的任意私有字词、名称和短语。注意该项可能违反工信部要求",
+    "level": "2"
+  },
+  "19": {
+    "name": "android.permission.RECEIVE_MMS",
+    "summary": "接收彩信",
+    "desc": "允许应用程序接收和处理彩信。注意该项可能违反工信部要求",
+    "level": "2"
+  },
+  "20": {
+    "name": "android.permission.RECEIVE_SMS",
+    "summary": "接收短信",
+    "desc": "允许应用程序接收和处理短信。注意该项可能违反工信部要求",
+    "level": "2"
+  },
+  "21": {
+    "name": "android.permission.RECEIVE_WAP_PUSH",
+    "summary": "接收 WAP",
+    "desc": "允许应用程序接收和处理 WAP 信息。注意该项可能违反工信部要求",
+    "level": "2"
+  },
+  "22": {
+    "name": "android.permission.RECORD_AUDIO",
+    "summary": "录音",
+    "desc": "允许应用程序访问录音路径。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "23": {
+    "name": "android.permission.SEND_SMS",
+    "summary": "发送短信",
+    "desc": "允许应用程序发送短信。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "24": {
+    "name": "android.permission.WRITE_CALENDAR",
+    "summary": "添加或修改日历活动以及向邀请对象发送电子邮件",
+    "desc": "允许应用程序添加或更改日历中的活动，这可能会向邀请对象发送电子邮件。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "25": {
+    "name": "android.permission.WRITE_CALL_LOG",
+    "summary": "写入通话记录",
+    "desc": "允许应用程序写 contacts data.注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "26": {
+    "name": "android.permission.WRITE_CONTACTS",
+    "summary": "写入联系人数据",
+    "desc": "允许应用程序修改您手机上存储的联系人（地址）数据。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "27": {
+    "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+    "summary": "修改/删除SD卡中的内容",
+    "desc": "允许应用程序写入SD卡。需用户授权，且不授权不能导致app失败,注意是否做好缺省。",
+    "level": "2"
+  },
+  "28": {
+    "name": "android.permission.WRITE_SECURE_SETTINGS",
+    "summary": "修改安全系统设置",
+    "desc": "允许应用程序修改系统的安全设置数据。普通应用程序不能使用此权限。",
+    "level": "2"
+  },
+  "29": {
+    "name": "android.permission.WRITE_SETTINGS",
+    "summary": "修改全局系统设置",
+    "desc": "允许应用程序修改系统设置方面的数据。恶意应用程序可借此破坏您的系统配置。",
+    "level": "2"
+  },
+  "30": {
+    "name": "android.permission.WRITE_SMS",
+    "summary": "编辑短信或彩信",
+    "desc": "允许应用程序写入手机或 SIM 卡中存储的短信。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "31": {
+    "name": "com.android.browser.permission.READ_HISTORY_BOOKMARKS",
+    "summary": "",
+    "desc": "允许应用程序读取浏览器历史记录。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "32": {
+    "name": "com.android.browser.permission.WRITE_HISTORY_BOOKMARKS",
+    "summary": "写入浏览器历史和书签记录",
+    "desc": "允许应用程序写入浏览器历史和书签记录。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "33": {
+    "name": "com.android.voicemail.permission.ADD_VOICEMAIL",
+    "summary": "",
+    "desc": "允许应用程序增加语音邮件。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "34": {
+    "name": "android.permission.ADD_SYSTEM_SERVICE",
+    "summary": "",
+    "desc": "允许程序发布系统级服务。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "35": {
+    "name": "android.permission.READ_OWNER_DATA",
+    "summary": "读取基本信息",
+    "desc": "允许程序读取所有者数据。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "36": {
+    "name": "com.android.voicemail.permission.ADD_VOICEMAIL",
+    "summary": "",
+    "desc": "允许应用程序增加语音邮件。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "37": {
+    "name": "android.permission.ACCESS_COARSE_LOCATION",
+    "summary": "大概位置",
+    "desc": "访问大概的位置源(例如蜂窝网络数据库)以确定手机的大概位置(如果可以)。注意该项可能违反工信部要求，个人隐私部分，且高版本存在其他定位要求。",
+    "level": "2"
+  },
+  "38": {
+    "name": "android.permission.ACCESS_FINE_LOCATION",
+    "summary": "精准的(GPS)位置",
+    "desc": "访问精准的位置源，例如手机上的全球定位系统(如果有)。注意该项可能违反工信部要求，个人隐私部分，且高版本存在其他定位要求。",
+    "level": "2"
+  },
+  "39": {
+    "name": "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+    "summary": "访问额外的位置信息提供程序命令",
+    "desc": "访问额外的位置信息提供程序命令。注意该项可能违反工信部要求，个人隐私部分，且高版本存在其他定位要求。",
+    "level": "2"
+  },
+  "40": {
+    "name": "android.permission.ACCESS_MOCK_LOCATION",
+    "summary": "使用模拟地点来源进行测试",
+    "desc": "创建模拟地点来源进行测试。注意该项可能违反工信部要求，个人隐私部分，且高版本存在其他定位要求。",
+    "level": "1"
+  },
+  "41": {
+    "name": "android.permission.BATTERY_STATS",
+    "summary": "修改电池统计信息",
+    "desc": "允许修改收集的电池使用情况统计信息。普通应用程序不能使用此权限。",
+    "level": "1"
+  },
+  "42": {
+    "name": "android.permission.BLUETOOTH",
+    "summary": "创建蓝牙连接",
+    "desc": "允许应用程序查看本地蓝牙手机的配置，以及建立或接受与配对设备的连接。注意该项可能违反工信部要求，个人隐私部分。",
+    "level": "2"
+  },
+  "43": {
+    "name": "android.permission.BROADCAST_PACKAGE_REMOVED",
+    "summary": "发送包删除的广播",
+    "desc": "允许应用程序广播已删除某应用程序包的通知。恶意应用程序可借此终止任何正在运行的其他应用程序。",
+    "level": "1"
+  },
+  "44": {
+    "name": "android.permission.BROADCAST_STICKY",
+    "summary": "发送置顶广播",
+    "desc": "允许应用程序发送顽固广播，这些广播在结束后仍会保留。恶意应用程序可能会借此使手机耗用太多内存，从而降低其速度或稳定性。",
+    "level": "1"
+  },
+  "45": {
+    "name": "android.permission.CAMERA",
+    "summary": "拍照",
+    "desc": "允许应用程序使用相机拍照，注意该项可能违反工信部要求，个人隐私部分，且不授权不能影响用户使用。",
+    "level": "2"
+  },
+  "46": {
+    "name": "android.permission.CHANGE_COMPONENT_ENABLED_STATE",
+    "summary": "启用或停用应用程序组件",
+    "desc": "允许应用程序更改是否启用其他应用程序的组件。恶意应用程序可借此停用重要的手机功能。使用此权限时务必谨慎，因为这可能导致应用程序组件进入不可用、不一致或不稳定的状态。",
+    "level": "1"
+  },
+  "47": {
+    "name": "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+    "summary": "允许接收WLAN多播",
+    "desc": "允许应用程序接收并非直接向您的设备发送的数据包。这样在查找附近提供的服务时很有用。这种操作所耗电量大于非多播模式。",
+    "level": "1"
+  },
+  "48": {
+    "name": "android.permission.CLEAR_APP_USER_DATA",
+    "summary": "删除其他应用程序的数据",
+    "desc": "允许应用程序清除用户数据。注意该项可能违反工信部要求，个人隐私部分，且不授权不能影响用户使用。",
+    "level": "1"
+  },
+  "49": {
+    "name": "android.permission.CONTROL_LOCATION_UPDATES",
+    "summary": "控制位置更新通知",
+    "desc": "允许启用/停用来自收音机的位置更新通知。普通应用程序不能使用此权限。",
+    "level": "1"
+  },
+  "50": {
+    "name": "android.permission.GET_TASKS",
+    "summary": "检索当前运行的应用程序",
+    "desc": "允许应用程序检索有关当前和最近运行的任务的信息。注意该项可能违反工信部要求，个人隐私部分，且不授权不能影响用户使用。",
+    "level": "1"
+  },
+  "51": {
+    "name": "android.permission.INSTALL_LOCATION_PROVIDER",
+    "summary": "允许安装位置信息提供程序",
+    "desc": "创建模拟地点来源进行测试。恶意应用程序可能利用此选项覆盖由真实地点来源（如 GPS 或网络提供商）所传回的地点和/或状态，或者监视您的位置并将其提供给外部来源。",
+    "level": "1"
+  },
+  "52": {
+    "name": "android.permission.INSTALL_PACKAGES",
+    "summary": "直接安装应用程序",
+    "desc": "允许应用程序安装全新的或更新的 Android 包。注意该项可能违反工信部要求，请谨慎处理。",
+    "level": "2"
+  },
+  "53": {
+    "name": "android.permission.MODIFY_PHONE_STATE",
+    "summary": "修改手机状态",
+    "desc": "允许应用程序控制设备的电话功能。拥有此权限的应用程序可自行切换网络、打开和关闭无线通信等，而不会通知您。",
+    "level": "2"
+  },
+  "54": {
+    "name": "android.permission.READ_CALENDAR",
+    "summary": "读取日历活动",
+    "desc": "允许应用程序读取您手机上存储的所有日历活动。恶意应用程序可借此将您的日历活动发送给其他人。",
+    "level": "2"
+  },
+  "55": {
+    "name": "android.permission.ACCESS_CHECKIN_PROPERTIES",
+    "summary": "访问检入属性",
+    "desc": "允许对检入服务上传的属性进行读/写访问。普通应用程序不能使用此权限。",
+    "level": "0"
+  },
+  "56": {
+    "name": "android.permission.ACCESS_NETWORK_STATE",
+    "summary": "查看网络状态",
+    "desc": "允许应用程序查看所有网络的状态。",
+    "level": "0"
+  },
+  "57": {
+    "name": "android.permission.ACCESS_SURFACE_FLINGER",
+    "summary": "访问 SurfaceFlinger",
+    "desc": "允许应用程序使用 SurfaceFlinger 低级别功能。",
+    "level": "0"
+  },
+  "58": {
+    "name": "android.permission.ACCESS_WIFI_STATE",
+    "summary": "查看 WLAN 状态",
+    "desc": "允许应用程序查看有关 WLAN 状态的信息。",
+    "level": "0"
+  },
+  "59": {
+    "name": "android.permission.ACCOUNT_MANAGER",
+    "summary": "作为帐户身份验证程序",
+    "desc": "允许应用程序使用 AccountManager 的帐户身份验证程序功能，包括创建帐户以及获取和设置其密码。",
+    "level": "0"
+  },
+  "60": {
+    "name": "android.permission.AUTHENTICATE_ACCOUNTS",
+    "summary": "作为帐户身份验证程序",
+    "desc": "允许应用程序使用 AccountManager 的帐户身份验证程序功能，包括创建帐户以及获取和设置其密码。",
+    "level": "0"
+  },
+  "61": {
+    "name": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+    "summary": "",
+    "desc": "Must be required by an AccessibilityService, to ensure that only the system can bind to it.",
+    "level": "0"
+  },
+  "62": {
+    "name": "android.permission.BIND_APPWIDGET",
+    "summary": "选择窗口小部件",
+    "desc": "允许应用程序告诉系统哪个应用程序可以使用哪些窗口小部件。具有该权限的应用程序可以允许其他应用程序访问个人数据。普通应用程序不能使用此权限。",
+    "level": "0"
+  },
+  "63": {
+    "name": "android.permission.BIND_DEVICE_ADMIN",
+    "summary": "与设备管理器交互",
+    "desc": "允许持有对象将意向发送到设备管理器。普通的应用程序一律无需此权限。",
+    "level": "0"
+  },
+  "64": {
+    "name": "android.permission.BIND_INPUT_METHOD",
+    "summary": "绑定至输入法",
+    "desc": "允许手机用户绑定至输入法的顶级界面。普通应用程序从不需要使用此权限。",
+    "level": "0"
+  },
+  "65": {
+    "name": "android.permission.BIND_NOTIFICATION_LISTENER_SERVICE",
+    "summary": "",
+    "desc": "Must be required by an NotificationListenerService, to ensure that only the system can bind to it.",
+    "level": "0"
+  },
+  "66": {
+    "name": "android.permission.BIND_REMOTEVIEWS",
+    "summary": "",
+    "desc": "Must be required by a RemoteViewsService, to ensure that only the system can bind to it.",
+    "level": "0"
+  },
+  "67": {
+    "name": "android.permission.BIND_TEXT_SERVICE",
+    "summary": "",
+    "desc": "Must be required by a TextService (e.g.",
+    "level": "0"
+  },
+  "68": {
+    "name": "android.permission.BIND_VPN_SERVICE",
+    "summary": "",
+    "desc": "Must be required by an VpnService, to ensure that only the system can bind to it.",
+    "level": "0"
+  },
+  "69": {
+    "name": "android.permission.BIND_WALLPAPER",
+    "summary": "绑定到壁纸",
+    "desc": "允许手机用户绑定到壁纸的顶级界面。应该从不需要将此权限授予普通应用程序。",
+    "level": "0"
+  },
+  "70": {
+    "name": "android.permission.BLUETOOTH_ADMIN",
+    "summary": "蓝牙管理",
+    "desc": "允许应用程序配置本地蓝牙手机，以及发现远程设备并与其配对。",
+    "level": "0"
+  },
+  "71": {
+    "name": "android.permission.BROADCAST_WAP_PUSH",
+    "summary": "",
+    "desc": "Allows an application to broadcast a WAP PUSH receipt notification.",
+    "level": "0"
+  },
+  "72": {
+    "name": "android.permission.CHANGE_CONFIGURATION",
+    "summary": "更改用户界面设置",
+    "desc": "允许应用程序更改当前配置，例如语言设置或整体的字体大小。",
+    "level": "0"
+  },
+  "73": {
+    "name": "android.permission.CHANGE_NETWORK_STATE",
+    "summary": "更改网络连接性",
+    "desc": "允许应用程序更改网络连接的状态。",
+    "level": "0"
+  },
+  "74": {
+    "name": "android.permission.CHANGE_WIFI_STATE",
+    "summary": "更改 WLAN 状态",
+    "desc": "允许应用程序连接到 WLAN 接入点以及与 WLAN 接入点断开连接，并对配置的 WLAN 网络进行更改。",
+    "level": "0"
+  },
+  "75": {
+    "name": "android.permission.CLEAR_APP_CACHE",
+    "summary": "删除所有应用程序缓存数据",
+    "desc": "允许应用程序通过删除应用程序缓存目录中的文件释放手机存储空间。通常此权限只适用于系统进程。",
+    "level": "0"
+  },
+  "76": {
+    "name": "android.permission.DELETE_CACHE_FILES",
+    "summary": "删除其他应用程序的缓存",
+    "desc": "允许应用程序删除缓存文件。",
+    "level": "2"
+  },
+  "77": {
+    "name": "android.permission.DEVICE_POWER",
+    "summary": "开机或关机",
+    "desc": "允许应用程序打开或关闭手机。",
+    "level": "2"
+  },
+  "78": {
+    "name": "android.permission.DIAGNOSTIC",
+    "summary": "读取/写入诊断所拥有的资源",
+    "desc": "允许应用程序读取/写入诊断组所拥有的任何资源（例如，/dev 中的文件）。这可能会影响系统稳定性和安全性。此权限仅供制造商或运营商诊断硬件问题。",
+    "level": "2"
+  },
+  "79": {
+    "name": "android.permission.DISABLE_KEYGUARD",
+    "summary": "停用键锁",
+    "desc": "允许应用程序停用键锁和任何关联的密码安全设置。例如，在手机上接听电话时停用键锁，在通话结束后重新启用键锁。",
+    "level": "0"
+  },
+  "80": {
+    "name": "android.permission.DUMP",
+    "summary": "检索系统内部状态",
+    "desc": "允许应用程序检索系统的内部状态。恶意应用程序可借此检索它们本不需要的各种保密信息和安全信息。",
+    "level": "0"
+  },
+  "81": {
+    "name": "android.permission.EXPAND_STATUS_BAR",
+    "summary": "展开/收拢状态栏",
+    "desc": "允许应用程序展开或收拢状态栏。",
+    "level": "0"
+  },
+  "82": {
+    "name": "android.permission.FACTORY_TEST",
+    "summary": "在出厂测试模式下运行",
+    "desc": "作为一项低级制造商测试来运行，从而允许对手机硬件进行完全访问。此权限仅当手机在制造商测试模式下运行时才可用。",
+    "level": "0"
+  },
+  "83": {
+    "name": "android.permission.FLASHLIGHT",
+    "summary": "控制闪光灯",
+    "desc": "允许应用程序控制闪光灯。",
+    "level": "0"
+  },
+  "84": {
+    "name": "android.permission.FORCE_BACK",
+    "summary": "强制应用程序关闭",
+    "desc": "允许应用程序强制前端的任何活动关闭并重新开始。普通应用程序从不需要使用此权限。",
+    "level": "0"
+  },
+  "85": {
+    "name": "android.permission.GET_ACCOUNTS",
+    "summary": "发现已知帐户",
+    "desc": "允许应用程序获取手机已知的帐户列表。",
+    "level": "0"
+  },
+  "86": {
+    "name": "android.permission.GET_PACKAGE_SIZE",
+    "summary": "计算应用程序存储空间",
+    "desc": "允许应用程序检索其代码、数据和缓存大小",
+    "level": "0"
+  },
+  "87": {
+    "name": "android.permission.GET_TOP_ACTIVITY_INFO",
+    "summary": "",
+    "desc": "Allows an application to retrieve private information about the current top activity, such as any assist context it can provide.",
+    "level": "0"
+  },
+  "88": {
+    "name": "android.permission.GLOBAL_SEARCH",
+    "summary": "全局搜索",
+    "desc": "允许应用程序使用全局搜索。",
+    "level": "0"
+  },
+  "89": {
+    "name": "android.permission.HARDWARE_TEST",
+    "summary": "测试硬件",
+    "desc": "允许应用程序控制各外围设备以进行硬件测试。",
+    "level": "0"
+  },
+  "90": {
+    "name": "android.permission.INTERNAL_SYSTEM_WINDOW",
+    "summary": "显示未授权的窗口",
+    "desc": "允许创建专用于内部系统用户界面的窗口。普通应用程序不能使用此权限。",
+    "level": "0"
+  },
+  "91": {
+    "name": "android.permission.INTERNET",
+    "summary": "访问网络",
+    "desc": "允许程序访问网络.",
+    "level": "0"
+  },
+  "92": {
+    "name": "android.permission.KILL_BACKGROUND_PROCESSES",
+    "summary": "结束后台进程",
+    "desc": "无论内存资源是否紧张，都允许应用程序结束其他应用程序的后台进程。",
+    "level": "0"
+  },
+  "93": {
+    "name": "android.permission.LOCATION_HARDWARE",
+    "summary": "",
+    "desc": "允许用户使用位置信息，甚至包括一些api the geofencing api.",
+    "level": "0"
+  },
+  "94": {
+    "name": "android.permission.MANAGE_ACCOUNTS",
+    "summary": "管理帐户列表",
+    "desc": "允许应用程序执行添加、删除帐户及删除其密码之类的操作。",
+    "level": "0"
+  },
+  "95": {
+    "name": "android.permission.MANAGE_APP_TOKENS",
+    "summary": "管理应用程序令牌",
+    "desc": "允许应用程序创建和管理自己的令牌，从而绕开其常规的 Z 方向。普通应用程序从不需要使用此权限。",
+    "level": "0"
+  },
+  "96": {
+    "name": "android.permission.MODIFY_AUDIO_SETTINGS",
+    "summary": "更改您的音频设置",
+    "desc": "允许应用程序修改整个系统的音频设置，如音量和路由。",
+    "level": "0"
+  },
+  "97": {
+    "name": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+    "summary": "装载和卸载文件系统",
+    "desc": "允许应用程序装载和卸载可移动存储器的文件系统。",
+    "level": "0"
+  },
+  "98": {
+    "name": "android.permission.NFC",
+    "summary": "",
+    "desc": "使用NFC功能",
+    "level": "0"
+  },
+  "99": {
+    "name": "android.permission.READ_LOGS",
+    "summary": "读取系统日志文件",
+    "desc": "允许应用程序从系统的各日志文件中读取信息。这样应用程序可以发现您的手机使用情况，但这些信息不应包含任何个人信息或保密信息。",
+    "level": "0"
+  },
+  "100": {
+    "name": "android.permission.READ_PROFILE",
+    "summary": "",
+    "desc": "允许应用程序读 personal profile data.",
+    "level": "0"
+  },
+  "101": {
+    "name": "android.permission.READ_SOCIAL_STREAM",
+    "summary": "",
+    "desc": "允许应用程序读 social stream.",
+    "level": "0"
+  },
+  "102": {
+    "name": "android.permission.READ_SYNC_SETTINGS",
+    "summary": "读取同步设置",
+    "desc": "允许应用程序读取同步设置，例如是否为联系人启用同步。",
+    "level": "0"
+  },
+  "103": {
+    "name": "android.permission.READ_SYNC_STATS",
+    "summary": "读取同步统计信息",
+    "desc": "允许应用程序读取同步统计信息；例如已发生的同步历史记录。",
+    "level": "0"
+  },
+  "104": {
+    "name": "android.permission.REBOOT",
+    "summary": "强行重新启动手机",
+    "desc": "允许应用程序强行重新启动手机。",
+    "level": "1"
+  },
+  "105": {
+    "name": "android.permission.RECEIVE_BOOT_COMPLETED",
+    "summary": "开机时自动启动",
+    "desc": "允许应用程序在系统完成启动后即自行启动。这样会延长手机的启动时间，而且如果应用程序一直运行，会降低手机的整体速度。",
+    "level": "1"
+  },
+  "106": {
+    "name": "android.permission.REORDER_TASKS",
+    "summary": "对正在运行的应用程序重新排序",
+    "desc": "允许应用程序将任务移至前端和后台。恶意应用程序可借此强行进入前端，而不受您的控制。",
+    "level": "1"
+  },
+  "107": {
+    "name": "android.permission.RESTART_PACKAGES",
+    "summary": "重启程序",
+    "desc": "允许程序自己重启或重启其他程序",
+    "level": "0"
+  },
+  "108": {
+    "name": "android.permission.SEND_RESPOND_VIA_MESSAGE",
+    "summary": "",
+    "desc": "Allows an application (Phone) to send a request to other applications to handle the respond-via-message action during incoming calls.",
+    "level": "0"
+  },
+  "109": {
+    "name": "android.permission.SET_ACTIVITY_WATCHER",
+    "summary": "监控所有应用程序的启动",
+    "desc": "允许应用程序监控系统启动活动的方式。恶意应用程序可借此彻底损坏系统。此权限仅在开发时才需要，普通的手机应用不需要。",
+    "level": "1"
+  },
+  "110": {
+    "name": "android.permission.SET_ALWAYS_FINISH",
+    "summary": "关闭所有后台应用程序",
+    "desc": "允许应用程序控制活动是否始终是一转至后台就完成。普通应用程序从不需要使用此权限。",
+    "level": "0"
+  },
+  "111": {
+    "name": "android.permission.SET_ANIMATION_SCALE",
+    "summary": "修改全局动画速度",
+    "desc": "允许应用程序随时更改全局动画速度（加快或放慢动画）。",
+    "level": "0"
+  },
+  "112": {
+    "name": "android.permission.SET_DEBUG_APP",
+    "summary": "启用应用程序调试",
+    "desc": "允许应用程序启动对其他应用程序的调试。恶意应用程序可借此终止其他应用程序。",
+    "level": "1"
+  },
+  "113": {
+    "name": "android.permission.SET_ORIENTATION",
+    "summary": "更改屏幕显示方向",
+    "desc": "允许应用程序随时更改屏幕的旋转方向。普通应用程序从不需要使用此权限。",
+    "level": "0"
+  },
+  "114": {
+    "name": "android.permission.SET_POINTER_SPEED",
+    "summary": "",
+    "desc": "Allows low-level access to setting the pointer speed.",
+    "level": "0"
+  },
+  "115": {
+    "name": "android.permission.SET_PREFERRED_APPLICATIONS",
+    "summary": "设置首选应用程序",
+    "desc": "允许应用程序修改首选的应用程序。这样恶意应用程序可能会暗中更改运行的应用程序，从而骗过您的现有应用程序来收集您的保密数据。",
+    "level": "1"
+  },
+  "116": {
+    "name": "android.permission.SET_PROCESS_LIMIT",
+    "summary": "限制运行的进程个数",
+    "desc": "允许应用程序控制将运行的进程数上限。普通应用程序从不需要使用此权限。",
+    "level": "0"
+  },
+  "117": {
+    "name": "android.permission.SET_TIME",
+    "summary": "设置时间",
+    "desc": "允许应用程序更改手机的时间。",
+    "level": "0"
+  },
+  "118": {
+    "name": "android.permission.SET_TIME_ZONE",
+    "summary": "设置时区",
+    "desc": "允许应用程序更改手机的时区。",
+    "level": "0"
+  },
+  "119": {
+    "name": "android.permission.SET_WALLPAPER",
+    "summary": "设置壁纸",
+    "desc": "允许应用程序设置系统壁纸。",
+    "level": "0"
+  },
+  "120": {
+    "name": "android.permission.SET_WALLPAPER_HINTS",
+    "summary": "设置壁纸大小提示",
+    "desc": "允许应用程序设置有关壁纸大小的提示。",
+    "level": "0"
+  },
+  "121": {
+    "name": "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+    "summary": "向应用程序发送 Linux 信号",
+    "desc": "允许应用程序请求将所提供的信号发送给所有持久进程。",
+    "level": "0"
+  },
+  "122": {
+    "name": "android.permission.STATUS_BAR",
+    "summary": "停用或修改状态栏",
+    "desc": "允许应用程序停用状态栏或者增删系统图标。",
+    "level": "0"
+  },
+  "123": {
+    "name": "android.permission.SUBSCRIBED_FEEDS_READ",
+    "summary": "读取订阅的供稿",
+    "desc": "允许应用程序获取有关当前同步的供稿的详细信息。",
+    "level": "0"
+  },
+  "124": {
+    "name": "android.permission.SUBSCRIBED_FEEDS_WRITE",
+    "summary": "写入订阅的供稿",
+    "desc": "允许应用程序修改您当前同步的供稿。恶意应用程序可借此更改您同步的供稿。",
+    "level": "1"
+  },
+  "125": {
+    "name": "android.permission.SYSTEM_ALERT_WINDOW",
+    "summary": "显示系统级警报",
+    "desc": "允许应用程序显示系统警报窗口。恶意应用程序可借此掌控整个手机屏幕。",
+    "level": "1"
+  },
+  "126": {
+    "name": "android.permission.UPDATE_DEVICE_STATS",
+    "summary": "更新设备状态",
+    "desc": "允许应用程序更新设备状态。",
+    "level": "0"
+  },
+  "127": {
+    "name": "android.permission.USE_CREDENTIALS",
+    "summary": "使用帐户的身份验证凭据",
+    "desc": "允许应用程序请求身份验证标记。",
+    "level": "0"
+  },
+  "128": {
+    "name": "android.permission.USE_SIP",
+    "summary": "",
+    "desc": "Allows an application to use SIP service",
+    "level": "0"
+  },
+  "129": {
+    "name": "android.permission.VIBRATE",
+    "summary": "控制振动器",
+    "desc": "允许应用程序控制振动器。",
+    "level": "0"
+  },
+  "130": {
+    "name": "android.permission.WAKE_LOCK",
+    "summary": "防止手机休眠",
+    "desc": "允许应用程序防止手机进入休眠状态。",
+    "level": "0"
+  },
+  "131": {
+    "name": "android.permission.WRITE_APN_SETTINGS",
+    "summary": "写入接入点名称设置",
+    "desc": "允许应用程序修改 APN 设置，例如任何 APN 的代理和端口。",
+    "level": "0"
+  },
+  "132": {
+    "name": "android.permission.WRITE_GSERVICES",
+    "summary": "修改 Google 地图",
+    "desc": "允许应用程序修改 Google 服务地图。普通应用程序不能使用此权限。",
+    "level": "0"
+  },
+  "133": {
+    "name": "android.permission.WRITE_PROFILE",
+    "summary": "",
+    "desc": "允许应用程序写 personal profile data.",
+    "level": "0"
+  },
+  "134": {
+    "name": "android.permission.WRITE_SOCIAL_STREAM",
+    "summary": "",
+    "desc": "允许应用程序写 social stream data.",
+    "level": "0"
+  },
+  "135": {
+    "name": "android.permission.WRITE_SYNC_SETTINGS",
+    "summary": "写入同步设置",
+    "desc": "允许应用程序修改同步设置，例如是否为联系人启用同步。",
+    "level": "1"
+  },
+  "136": {
+    "name": "android.permission.WRITE_USER_DICTIONARY",
+    "summary": "写入用户定义的词典",
+    "desc": "允许应用程序向用户词典中写入新词。",
+    "level": "1"
+  },
+  "137": {
+    "name": "com.android.alarm.permission.SET_ALARM",
+    "summary": "",
+    "desc": "允许应用程序广播Intent来设置闹铃。",
+    "level": "0"
+  },
+  "138": {
+    "name": "com.android.launcher.permission.INSTALL_SHORTCUT",
+    "summary": "",
+    "desc": "允许应用程序创建快捷方式。",
+    "level": "0"
+  },
+  "139": {
+    "name": "android.permission.SET_PROCESS_FOREGROUND",
+    "summary": "",
+    "desc": "允许程序当前运行程序强行到前台。",
+    "level": "1"
+  }
+}
