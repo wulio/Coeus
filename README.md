@@ -34,5 +34,12 @@ AdvBox support [Apache License 2.0](https://github.com/baidu/AdvBox/blob/master/
 # Email
   deffingh@gmail.com
 
-# issues
+# Issues
   welcome star or issues!
+
+# Plan
+
+    apk-support     2019.12.30
+    script-update   2019.1.15
+    dynamicscannner 2019.1 - 2020.2
+    fuzz            2020.2 - 2020.3
