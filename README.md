@@ -21,6 +21,9 @@ Try your first Coeus scan:
   如对您有帮助，建议star或者watching,后续将持续更新,包括更新更多规则，动态扫描等相关内容。
  
 # Usage:
+
+  依赖环境 python 3.x ,并且路径配置java环境。Python 2.7将于2020年1月1日终止支持，所以本人用的是3.8.0
+
   python coeus.py xxx.aar
 
 # Authors
