@@ -13,6 +13,11 @@ Try your first Coeus scan:
     
     python coeus.py xxx.aar
 
+# Required
+  
+  python 3.x+ 
+  java 1.7+ (in sys path)
+  
 # CH
 
   直接使用 python coeus.py xxx.aar调用，会生成reprot.xml在report目录，主要扫描安全漏洞、国内政策、隐私权限等信息。该项目其实可以复用为apk扫描，并无不同……
@@ -32,7 +37,7 @@ Try your first Coeus scan:
 
 # License
 
-AdvBox support [Apache License 2.0](https://github.com/baidu/AdvBox/blob/master/LICENSE)
+Coeus support [Apache License 2.0](https://github.com/baidu/AdvBox/blob/master/LICENSE)
 
 # Email
   deffingh@gmail.com
