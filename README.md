@@ -1,35 +1,51 @@
 # Coeus
 
 Coeus：
-  Coeus was one of the Titans, son of Uranus and Gaia. His name means questioning。
+  Coeus was one of the Titans, son of Uranus and Gaia. His name means questioning.
   
-  if we need import android sdk,we maybe have some questions about the sdk,like sercurity/permissions/policy/info.jCoeus project will help you do this .
-  you can see report.xml in report dir
+  if we need import android sdk,we maybe have some questions about the sdk,like sercurity/permissions/policy/info
+  
+  Coeus project will help you do this . you can see report.xml in report dir.
 
   
-  now Coeus just support android sdk like aar or jar.this project will keep udapte ,you can star or watching.
-  
+# Try
 Try your first Coeus scan:
     
     python coeus.py xxx.aar
 
-# Required
-  
-  python 3.x+ 
-  java 1.7+ (in sys path)
-  
+
 # CH
 
-  直接使用 python coeus.py xxx.aar调用，会生成reprot.xml在report目录，主要扫描安全漏洞、国内政策、隐私权限等信息。该项目其实可以复用为apk扫描，并无不同……
-  可以查看result.xml，为个推最新sdk扫描结果
+## 0x01 项目地址
 
-  如对您有帮助，建议star或者watching,后续将持续更新,包括更新更多规则，动态扫描等相关内容。
- 
-# Usage:
+项目地址：
+	https://github.com/wulio/Coeus
 
-  依赖环境 python 3.x ,并且路径配置java环境。Python 2.7将于2020年1月1日终止支持，所以本人用的是3.8.0
+## 0x02 依赖环境
 
-  python coeus.py xxx.aar
+​	python 3.x / java	
+
+## 0x03 安装使用教程
+
+  - 安装 ：
+      git clone https://github.com/wulio/Coeus.git
+  - 一键扫描：
+      python coeus.py xxx.aar
+
+## 0x04 相关说明
+
+-   相关政策代码及隐私代码检测策略，均在scrpit文件夹中，json格式便于添加与修改
+
+- 	相应的工具也存储在tool文件夹下
+
+- 	具体代码逻辑均可在项目组查看。
+
+- 	生成的扫描文件，输出在result文件夹下,分别有对应的log文件和输出的report.xml文件。
+
+
+## 0x05 使用示例
+
+    python getui_2.13.3.0-gisdk_3.1.9.1-gssdk_2.3.0.0.aar	
 
 # Authors
 
@@ -47,7 +63,15 @@ Coeus support [Apache License 2.0](https://github.com/baidu/AdvBox/blob/master/L
 
 # Plan
 
-    apk-support     2019.12.30
-    script-update   2019.1.15
-    dynamicscannner 2019.1 - 2020.2
-    fuzz            2020.2 - 2020.3
+- [ ] - more-sdk-info         2019.12.30    
+- [ ] - script-update    2019.1.15
+- [ ] - apk-support      2019.1.30
+- [ ] - dynamicscannner  2019.2
+- [ ] - fuzz            2020.3
+- [ ] - 
+- [ ] - 
+- [ ] - 
+
+    
+    
+               
