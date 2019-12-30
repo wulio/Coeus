@@ -62,15 +62,12 @@ class ApiScanner(BaseScanner):
                 lines = java_f.readlines()
                 for line in lines:
                     line = line.strip()
-                    if line.find("http:") > -1:
-                        msg = "http:"
-                    elif line.find("https:") > -1:
-                        msg = "https:"
-                    else:
+                    if line.find("http:") < 0 and line.find("https:") < 0:
                         continue
                     urls = self.getmsg(line)
-                    if urls:
-                        self.report_url_http.extend(urls)
+                    for url in urls:
+                        if url not in self.report_url_http:
+                            self.report_url_http.append(url)
 
     # 正则搞定
     def getmsg(self, line):
@@ -145,6 +142,17 @@ class ApiScanner(BaseScanner):
         report += "</api-policy>"
 
         report += "<api-exploit>"
+        if sdkinfo.allow_back_up:
+            report += "<allowed>" + \
+                      "<desc>" + "allowBackup标志为true" + "</desc>" + \
+                      "<slu>" + "请将allowBackup设定为false，存在非法备份泄露等安全风险。" + "</slu>" + \
+                      "</allowed>"
+        if sdkinfo.debuggable:
+            report += "<debuggable>" + \
+                      "<desc>" + "debuggable标志为true" + "</desc>" + \
+                      "<slu>" + "请将debuggable设定为false，存在非法调试等安全风险。" + "</slu>" + \
+                      "</debuggable>"
+
         for report_exploit in self.report_exploit_list:
             report += "<api>" + "<name>" + report_exploit["name"] + "</name>" + \
                       "<summary>" + report_exploit["summary"] + "</summary>" + \

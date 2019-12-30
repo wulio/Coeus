@@ -81,10 +81,10 @@ class Manager:
     def scan(self, is_aar):
         scanners = [StaticScanner(is_aar), DynamicScanner()]
         logging.info("start scan..")
-        self.report = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<sdkscan>\n"
+        self.report = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<coeus>\n"
         for scanner in scanners:
             self.report += scanner.start()
-        self.report += "</sdkscan>"
+        self.report += "</coeus>"
         self.save_report()
 
     def save_report(self):

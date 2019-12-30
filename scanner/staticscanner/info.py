@@ -52,7 +52,12 @@ class InfoScanner(BaseScanner):
                 if line.find('targetSdkVersion') > -1:
                     re_target = re.compile(r"android:targetSdkVersion=\"(.*?)\"\s")
                     sdkinfo.target_sdk_version = re_target.findall(line)[0]
-
+                if line.find("android:allowBackup") > -1:
+                    re_allow = re.compile(r"android:allowBackup=\"(.*?)\"\s")
+                    sdkinfo.allow_back_up = re_allow.findall(line)[0].lower() == "true"
+                if line.find("android:debuggable") > -1:
+                    re_debug = re.compile(r"android:debuggable=\"(.*?)\"\s")
+                    sdkinfo.debuggable = re_debug.findall(line)[0].lower() == "true"
     # /jni/abi_name/name.so（其中“abi_name”是 Android 支持的 ABI 之一）
     def get_soname(self):
         if FileUtils.is_file_exit(config.jni_path):

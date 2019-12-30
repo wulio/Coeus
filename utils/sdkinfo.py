@@ -19,5 +19,7 @@ class SdkInfo:
         self.target_sdk_version = ""
         self.min_sdk_version = ""
 
+        self.allow_back_up = False
+        self.debuggable = False
 
 sdkinfo = SdkInfo()

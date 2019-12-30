@@ -91,14 +91,16 @@
     "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。工信部要求，不得向第三方提供用户设备IMEI号、地理位置等个人信息，及sdk不得私自传输。若必须，请经用户同意，且做匿名化处理，并附有隐私政策说明。且若用户拒绝，不能影响app正常业务使用。"
   },
   {
-    "name": "安装程序",
-    "summary": "sdk可安装程序",
-    "desc": "sdk安装程序，需及时进行处理，正常不应有此功能",
+    "name": "获取已安装程序列表",
+    "summary": "sdk尝试获取已安装程序列表 1.该信息属于个人隐私信息 2.工信部要求",
+    "desc": "sdk获取app列表，极有可能导致被整改",
     "javacode": "",
     "smalicode": {
-      "0": "application/vnd.android.package-archive"
+      "0": "Landroid/content/pm/PackageManager;->getInstalledPackages(I)Ljava/util/List;",
+      "1": "Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List",
+      "2": "Landroid/content/pm/PackageManager;->getPackagesForUid(I)Ljava/util/List"
     },
-    "level": "",
+    "level": "2",
     "sol": "联系sdk开发负责人或针对此进行处理，说明使用原因。工信部要求，不得向第三方提供用户设备IMEI号、地理位置等个人信息，及sdk不得私自传输。若必须，请经用户同意，且做匿名化处理，并附有隐私政策说明。且若用户拒绝，不能影响app正常业务使用。"
   }
 ]
