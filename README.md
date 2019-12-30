@@ -63,15 +63,20 @@ Coeus support [Apache License 2.0](https://github.com/baidu/AdvBox/blob/master/L
 
 # Plan
 
-- [ ] - more-sdk-info         2019.12.30    
+- [x] - more-sdk-info         2019.12.30
 - [ ] - script-update    2019.1.15
 - [ ] - apk-support      2019.1.30
 - [ ] - dynamicscannner  2019.2
 - [ ] - fuzz            2020.3
 - [ ] - 
 - [ ] - 
-- [ ] - 
+- [ ] -
 
-    
-    
-               
+# Project
+version : v1.0.1
+time :2019-12-30
+1. 更新部分script规则
+2. 更新支持输入文件为相对路径
+3. 更新url展示，过滤其中相同url地址
+4. 添加部分工具，如adb/dex2jar等工具
+
