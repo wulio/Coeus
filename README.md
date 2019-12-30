@@ -45,7 +45,7 @@ Try your first Coeus scan:
 
 ## 0x05 使用示例
 
-    python getui_2.13.3.0-gisdk_3.1.9.1-gssdk_2.3.0.0.aar	
+    python ceous.py ./test/getui_2.13.3.0-gisdk_3.1.9.1-gssdk_2.3.0.0.aar	
 
 # Authors
 
