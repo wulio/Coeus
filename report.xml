@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<sdkscan>
+<coeus>
     <sdkinfo>
         <sdkname>getui_2.13.3.0-gisdk_3.1.9.1-gssdk_2.3.0.0</sdkname>
         <packageName>com.getui.onesdk</packageName>
@@ -157,7 +157,11 @@
             <name>获取已安装程序列表</name>
             <summary>sdk尝试获取已安装程序列表 1.该信息属于个人隐私信息 2.工信部要求</summary>
             <desc>sdk获取app列表，极有可能导致被整改</desc>
+            <code>invoke-virtual {v0, p0, v1}, Landroid/content/pm/PackageManager;-&amp;lt;queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;</code>
             <code>invoke-virtual {v4, v0}, Landroid/content/pm/PackageManager;-&amp;lt;getInstalledPackages(I)Ljava/util/List;</code>
+            <code>invoke-virtual {v4, v0}, Landroid/content/pm/PackageManager;-&amp;lt;getInstalledPackages(I)Ljava/util/List;</code>
+            <classname>\com\getui\gs\ias\e\u.smali</classname>
+            <classname>\com\getui\gs\ias\e\x.smali</classname>
             <classname>\com\getui\gs\ias\e\x.smali</classname>
             <level>2</level>
             <slu>
@@ -205,6 +209,25 @@
             <slu>建议复查下调用，避免使用弱随机数密钥</slu>
         </api>
         <api>
+            <name>日志信息泄露风险</name>
+            <summary>日志信息泄露风险</summary>
+            <desc>日志信息泄露风险，建议去除日志信息</desc>
+            <code>invoke-static {v0, v1}, Landroid/util/Log;-&amp;lt;d(Ljava/lang/String;Ljava/lang/String;)I</code>
+            <code>invoke-static {v0, v1}, Landroid/util/Log;-&amp;lt;d(Ljava/lang/String;Ljava/lang/String;)I</code>
+            <code>invoke-static {v0, v1}, Landroid/util/Log;-&amp;lt;d(Ljava/lang/String;Ljava/lang/String;)I</code>
+            <code>invoke-static {v0, v1}, Landroid/util/Log;-&amp;lt;d(Ljava/lang/String;Ljava/lang/String;)I</code>
+            <code>invoke-static {v0, v1}, Landroid/util/Log;-&amp;lt;d(Ljava/lang/String;Ljava/lang/String;)I</code>
+            <code>invoke-static {v0, v1}, Landroid/util/Log;-&amp;lt;d(Ljava/lang/String;Ljava/lang/String;)I</code>
+            <classname>\com\getui\gs\ias\e\m.smali</classname>
+            <classname>\com\getui\gs\ias\e\m.smali</classname>
+            <classname>\com\getui\gs\ias\floatwindow\k.smali</classname>
+            <classname>\com\getui\gs\ias\floatwindow\k.smali</classname>
+            <classname>\com\getui\gs\ias\floatwindow\k.smali</classname>
+            <classname>\com\getui\gs\ias\floatwindow\k.smali</classname>
+            <level>1</level>
+            <slu>日志信息泄露，可能威胁用户敏感隐私数据安全。</slu>
+        </api>
+        <api>
             <name>动态加载其他程序</name>
             <summary>sdk动态加载其他程序</summary>
             <desc>sdk尝试进行动态加载其他程序</desc>
@@ -221,141 +244,6 @@
         <http-code>http://%s/geshu/smartStatistics/upe</http-code>
         <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
         <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
-        <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
-        <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
-        <http-code>http://%s/geshu/sdk/uConfs</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ued</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>https://%s/encryption/key/fetch</http-code>
-        <http-code>http://%s/geshu/smartStatistics/upe</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/ubi</http-code>
-        <http-code>http://%s/geshu/sdkStatistics/bd</http-code>
         <http-code>http://%s/geshu/sdk/getBaseConfs</http-code>
         <http-code>http://%s/geshu/sdk/getCompleteConfs</http-code>
         <http-code>http://%s/geshu/sdk/getAccessToken</http-code>
@@ -364,12 +252,6 @@
         <http-code>http://%s/geshu/sdkStatistics/uud</http-code>
         <http-code>http://c-gtc.getui.com/api.php?format=json&amp;t=1</http-code>
         <http-code>http://b-gtc.getui.com/api.php?format=json&amp;t=1</http-code>
-        <http-code>http://c-gtc.getui.com/api.php?format=json&amp;t=1</http-code>
-        <http-code>http://b-gtc.getui.com/api.php?format=json&amp;t=1</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
-        <http-code>http://%s/api.php?format=json&amp;t=1</http-code>
         <http-code>http://sdk.open.phone.igexin.com/api/addr.htm</http-code>
     </url-safe>
-</sdkscan>
+</coeus>
