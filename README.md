@@ -65,9 +65,9 @@ Coeus support [Apache License 2.0](https://github.com/baidu/AdvBox/blob/master/L
 
 - [x] - more-sdk-info         2019.12.30
 - [ ] - script-update    2019.1.15
-- [ ] - apk-support      2019.1.30
-- [ ] - dynamicscannner  2019.2
-- [ ] - fuzz            2020.3
+- [ ] - apk-support      2019.2.7
+- [ ] - dynamicscannner  2019.3
+- [ ] - fuzz            2020.4
 - [ ] - 
 - [ ] - 
 - [ ] -
