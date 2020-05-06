@@ -72,6 +72,8 @@ Coeus support [Apache License 2.0](https://github.com/baidu/AdvBox/blob/master/L
 - [ ] - 
 - [ ] -
 
+cause of work-transform  pasued plan   
+
 # Project
 version : v1.0.1
 time :2019-12-30
@@ -80,3 +82,4 @@ time :2019-12-30
 3. 更新url展示，过滤其中相同url地址
 4. 添加部分工具，如adb/dex2jar等工具
 
+由于工作转化，暂停计划。
